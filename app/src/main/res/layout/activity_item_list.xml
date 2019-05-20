@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10.0"
+    tools:context=".ItemList">
+
+    <Button
+        android:id="@+id/item_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Rice"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/item_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cheese"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/item_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Apples"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/item_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Mango"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/item_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pasta"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/item_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Bread"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/item_seven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Maize Meal"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/item_eight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Beans"
+        android:layout_gravity="center"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/item_nine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Chicken"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/item_ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Beef"
+        android:onClick="returnItem"
+        android:layout_weight="1.0" />
+
+</LinearLayout>

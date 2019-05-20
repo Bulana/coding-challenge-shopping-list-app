@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10.0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/row_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Empty"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/row_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empty"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/row_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Empty"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/row_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Empty"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/row_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Empty"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/row_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Empty"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/row_seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Empty"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/row_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Empty"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/row_nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Empty"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@+id/row_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Empty"
+        android:layout_weight="1.0" />
+    <Button
+        android:id="@+id/addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="addItem"
+        android:text="+"
+        android:layout_weight="1.0" />
+</LinearLayout>
