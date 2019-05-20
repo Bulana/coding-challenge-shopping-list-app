@@ -1,11 +1,10 @@
 package com.bulana.myapplication;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,16 +48,28 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_PICK_ITEM && resultCode == RESULT_OK && null != data) {
             String itemName = data.getStringExtra(ItemList.EXTRA_PICKED_ITEM);
-            rowOne.setText(itemName);
-            rowTwo.setText(itemName);
-            rowThree.setText(itemName);
-            rowFour.setText(itemName);
-            rowFive.setText(itemName);
-            rowSix.setText(itemName);
-            rowSeven.setText(itemName);
-            rowEight.setText(itemName);
-            rowNine.setText(itemName);
-            rowTen.setText(itemName);
+
+            if (rowOne.getText().toString().isEmpty()) {
+                rowOne.setText(itemName);
+            } else if (rowTwo.getText().toString().isEmpty()) {
+                rowTwo.setText(itemName);
+            } else if (rowThree.getText().toString().isEmpty()) {
+                rowThree.setText(itemName);
+            } else if (rowFour.getText().toString().isEmpty()) {
+                rowFour.setText(itemName);
+            } else if (rowFive.getText().toString().isEmpty()) {
+                rowFive.setText(itemName);
+            } else if (rowSix.getText().toString().isEmpty()) {
+                rowSix.setText(itemName);
+            } else if (rowSeven.getText().toString().isEmpty()) {
+                rowSeven.setText(itemName);
+            } else if (rowEight.getText().toString().isEmpty()) {
+                rowEight.setText(itemName);
+            } else if (rowNine.getText().toString().isEmpty()) {
+                rowNine.setText(itemName);
+            } else if (rowTen.getText().toString().isEmpty()) {
+                rowTen.setText(itemName);
+            }
         }
     }
 }
