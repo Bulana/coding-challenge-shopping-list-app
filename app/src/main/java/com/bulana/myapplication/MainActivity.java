@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_PICK_ITEM && resultCode == RESULT_OK && null != data) {
+        if (requestCode == REQUEST_PICK_ITEM && resultCode == RESULT_OK && data != null ) {
             String itemName = data.getStringExtra(ItemList.EXTRA_PICKED_ITEM);
 
             if (rowOne.getText().toString().isEmpty()) {
@@ -75,10 +76,34 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
+        Log.i("Instance state","onSaveInstanceState");
 
-        // Save the user's current game state
-//        savedInstanceState.putInt("score", mCurrentScore);
-//        savedInstanceState.putInt("level", mCurrentLevel);
+        savedInstanceState.putString("rowOne", rowOne.getText().toString());
+        savedInstanceState.putString("rowTwo", rowTwo.getText().toString());
+        savedInstanceState.putString("rowThree", rowThree.getText().toString());
+        savedInstanceState.putString("rowFour", rowFour.getText().toString());
+        savedInstanceState.putString("rowFive", rowFive.getText().toString());
+        savedInstanceState.putString("rowSix", rowSix.getText().toString());
+        savedInstanceState.putString("rowSeven", rowSeven.getText().toString());
+        savedInstanceState.putString("rowEight", rowEight.getText().toString());
+        savedInstanceState.putString("rowNine", rowNine.getText().toString());
+        savedInstanceState.putString("rowTen", rowTen.getText().toString());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.i("Instance state", "onRestoreInstanceState");
+            rowOne.setText(savedInstanceState.getString("rowOne"));
+            rowTwo.setText(savedInstanceState.getString("rowTwo"));
+            rowThree.setText(savedInstanceState.getString("rowThree"));
+            rowFour.setText(savedInstanceState.getString("rowFour"));
+            rowFive.setText(savedInstanceState.getString("rowFive"));
+            rowSix.setText(savedInstanceState.getString("rowSix"));
+            rowSeven.setText(savedInstanceState.getString("rowSeven"));
+            rowEight.setText(savedInstanceState.getString("rowEight"));
+            rowNine.setText(savedInstanceState.getString("rowNine"));
+            rowTen.setText(savedInstanceState.getString("rowTen"));
     }
 }
 
