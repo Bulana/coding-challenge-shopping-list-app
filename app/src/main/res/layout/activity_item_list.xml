@@ -13,80 +13,90 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Rice"
+        android:text="RICE"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/item_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Cheese"
+        android:text="CHEESE"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/item_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Apples"
+        android:text="APPLE"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/item_four"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Mango"
+        android:text="MANGO"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/item_five"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Pasta"
+        android:text="PASTA"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/item_six"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Bread"
+        android:text="BREAD"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/item_seven"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Maize Meal"
+        android:text="MAIZE MEAL"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/item_eight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Beans"
+        android:text="BEANS"
         android:layout_gravity="center"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/item_nine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Chicken"
+        android:text="CHICKEN"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/item_ten"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Beef"
+        android:text="BEEF"
         android:onClick="returnItem"
+        android:background="@drawable/button"
         android:layout_weight="1.0" />
 
 </LinearLayout>

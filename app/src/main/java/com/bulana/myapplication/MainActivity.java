@@ -72,6 +72,14 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+
+        // Save the user's current game state
+//        savedInstanceState.putInt("score", mCurrentScore);
+//        savedInstanceState.putInt("level", mCurrentLevel);
+    }
 }
 
 

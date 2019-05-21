@@ -13,60 +13,80 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Empty"
+        android:gravity="center"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <TextView
         android:id="@+id/row_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:hint="Empty"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <TextView
         android:id="@+id/row_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:hint="Empty"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <TextView
         android:id="@+id/row_four"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:hint="Empty"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <TextView
         android:id="@+id/row_five"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:hint="Empty"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <TextView
         android:id="@+id/row_six"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:hint="Empty"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <TextView
         android:id="@+id/row_seven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:hint="Empty"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <TextView
         android:id="@+id/row_eight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:hint="Empty"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <TextView
         android:id="@+id/row_nine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:hint="Empty"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <TextView
         android:id="@+id/row_ten"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:hint="Empty"
+        android:textColor="#000000"
         android:layout_weight="1.0" />
     <Button
         android:id="@+id/addItem"
@@ -74,6 +94,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="addItem"
+        android:textColor="#000000"
+        android:background="@drawable/button"
         android:text="+"
         android:layout_weight="1.0" />
 </LinearLayout>
