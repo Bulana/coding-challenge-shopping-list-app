@@ -1,16 +1,18 @@
 package com.bulana.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private final static int REQUEST_PICK_ITEM = 1;
-
+    private EditText locationEditText;
     private TextView rowOne;
     private TextView rowTwo;
     private TextView rowThree;
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        locationEditText = findViewById(R.id.location_edittext);
         rowOne = findViewById(R.id.row_one);
         rowTwo = findViewById(R.id.row_two);
         rowThree = findViewById(R.id.row_three);
@@ -104,6 +106,21 @@ public class MainActivity extends AppCompatActivity {
             rowEight.setText(savedInstanceState.getString("rowEight"));
             rowNine.setText(savedInstanceState.getString("rowNine"));
             rowTen.setText(savedInstanceState.getString("rowTen"));
+    }
+
+    public void openLocation(View view) {
+
+        String location = locationEditText.getText().toString();
+
+        Uri addressUri = Uri.parse("geo:0,0?q=" + location);
+        Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
+
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Log.d("ImplicitIntents", "Can't handle this intent!");
+
+        }
     }
 }
 
